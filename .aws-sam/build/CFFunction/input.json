@@ -1,0 +1,37 @@
+{
+    "class-date": "2020-06-14T01:59:00Z",
+    "students": {
+      "accounts": [
+        { "account-number": "404771415876", "student-name": "John Doe", "email": "john.doe@gmail.com" },
+        { "account-number": "624041382079", "student-name": "Ashley Miller", "email": "ashley.miller@gmail.com" },
+        { "account-number": "337731452564", "student-name": "Natalie Portman", "email": "natalie.portman@gmail.com" }
+      ]
+    }
+  },
+
+
+  {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::405696771294:role/hopper-ec2"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "sts:AssumeRole",
+            "Resource": "arn:aws:iam::405696771294:role/hopper-cf"
+        }
+    ]
+}
+
+
+
+
+"Record to Db": {
+    "Type": "Task",
+    "Resource": "${DDBPutItem}",
+    "Parameters": {"TableName": "${DDBTable}", "Item": {"account": "$.setup_statuses"}},
+    "End": true
+}

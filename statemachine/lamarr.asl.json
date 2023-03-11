@@ -1,0 +1,41 @@
+{
+    "Comment": "Lamarr State Machine",
+    "StartAt": "Deploy-All",
+    "States": {
+        "Deploy-All": {
+            "Type": "Map",
+            "MaxConcurrency": 1,
+            "InputPath": "$.students",
+            "ItemsPath": "$.accounts",
+            "Parameters": {
+                "account.$": "$$.Map.Item.Value",
+                "KeyName": "DemoKey", 
+                "RegionId": "us-east-2", 
+                "StackName": "InitialSetup", 
+                "TemplateUrl": "https://s3-us-west-2.amazonaws.com/cloudformation-templates-us-west-2/EC2InstanceWithSecurityGroupSample.template", 
+                "InstanceType": "t2.micro"
+            },
+            "Iterator": {
+                "StartAt": "Deploy",
+                "States": {
+                    "Deploy": {
+                        "Type": "Task",
+                        "Resource": "${CFArn}",
+                        "TimeoutSeconds": 3600,
+                        "HeartbeatSeconds": 3600,
+                        "Next": "Record to Db"
+                    },
+                    "Record to Db": {
+                        "Type": "Task",
+                        "Resource": "${DbArn}",
+                        "TimeoutSeconds": 3600,
+                        "HeartbeatSeconds": 3600,
+                        "End": true
+                    }
+                }
+            },
+            "ResultPath": "$.students.accounts",
+            "End": true
+          }
+    }
+}

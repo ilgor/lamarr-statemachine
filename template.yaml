@@ -1,0 +1,56 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  lamarr-sm
+
+  Sample SAM Template for lamarr-sm
+
+Resources:
+  Lamarr:
+    Type: AWS::Serverless::StateMachine 
+    Properties:
+      DefinitionUri: statemachine/lamarr.asl.json
+      DefinitionSubstitutions:
+        DbArn: !GetAtt DbFunction.Arn
+        CFArn: !GetAtt CFFunction.Arn
+        DDBPutItem: !Sub arn:${AWS::Partition}:states:::dynamodb:putItem
+        DDBTable: !Ref ResourcesTable
+      Policies: 
+        - LambdaInvokePolicy:
+            FunctionName: !Ref DbFunction
+        - LambdaInvokePolicy:
+            FunctionName: !Ref CFFunction
+        - DynamoDBWritePolicy:
+            TableName: !Ref ResourcesTable
+
+  DbFunction:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: functions/db/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+
+  CFFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: functions/cf/
+      Handler: app.lambda_handler
+      Runtime: python3.8
+
+  ResourcesTable:
+    Type: AWS::Serverless::SimpleTable 
+    Properties:
+      PrimaryKey:
+        Name: Id
+        Type: String
+      ProvisionedThroughput:
+        ReadCapacityUnits: 1
+        WriteCapacityUnits: 1
+
+Outputs:
+  LamarrArn:
+    Description: "Lamarr State machine ARN"
+    Value: !Ref Lamarr
+  LamarrRoleArn:
+    Description: "IAM Role created for Lamarr State machine based on the specified SAM Policy Templates"
+    Value: !GetAtt LamarrRole.Arn

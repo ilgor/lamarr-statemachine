@@ -1,0 +1,9 @@
+version: "3.7"
+
+services:
+  nuke-lamarr:
+    build: nuke-lamarr/
+    container_name: nuke-lamarr
+    volumes:
+      - ./nuke-lamarr/nuke-config.yml:/bin/config.yml
+      - ~/.aws:/bin/.aws

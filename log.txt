@@ -1,0 +1,121 @@
+us-east-2 - AthenaWorkGroup - primary - [ARN: "arn:aws:athena:us-east-2:404771415876:workgroup/primary", Name: "primary"] - cannot delete primary athena work group
+us-east-2 - EC2SecurityGroup - sg-0200c21a7a0c7e471 - [Name: "launch-wizard-2"] - would remove
+us-east-2 - EC2SecurityGroup - sg-03136ca27fe2096f3 - [Name: "InitialSetup-InstanceSecurityGroup-7WXXDSNIH81E", tag:aws:cloudformation:logical-id: "InstanceSecurityGroup", tag:aws:cloudformation:stack-id: "arn:aws:cloudformation:us-east-2:404771415876:stack/InitialSetup/d9a8ebb0-ab49-11ea-b989-023ebc410218", tag:aws:cloudformation:stack-name: "InitialSetup"] - would remove
+us-east-2 - EC2SecurityGroup - sg-05e1de46aa1db477c - [Name: "DempStack-InstanceSecurityGroup-PCIQYY2RJUNE", tag:KeyName: "DemoKey", tag:aws:cloudformation:logical-id: "InstanceSecurityGroup", tag:aws:cloudformation:stack-id: "arn:aws:cloudformation:us-east-2:404771415876:stack/DempStack/472e3210-9b20-11ea-84ac-0286ec33b064", tag:aws:cloudformation:stack-name: "DempStack"] - would remove
+us-east-2 - EC2SecurityGroup - sg-0633b3e58a585267f - [Name: "launch-wizard-1"] - would remove
+us-east-2 - EC2SecurityGroup - sg-08e05ee8df5824843 - [Name: "Web-DMZ"] - would remove
+us-east-2 - EC2SecurityGroup - sg-0c99c710d48b0712c - [Name: "default"] - cannot delete group 'default'
+us-east-2 - EC2InternetGatewayAttachment - igw-0b9f25b31e25a2ee5 -> vpc-0c5f4e3df86f77d4e - [] - would remove
+us-east-2 - SNSTopic - TopicARN: arn:aws:sns:us-east-2:404771415876:aws-controltower-SecurityNotifications - filtered by config
+us-east-2 - ConfigServiceConfigurationRecorder - aws-controltower-BaselineConfigRecorder - filtered by config
+us-east-2 - ConfigServiceDeliveryChannel - aws-controltower-BaselineConfigDeliveryChannel - filtered by config
+us-east-2 - CloudWatchEventsTarget - Rule: aws-controltower-ConfigComplianceChangeEventRule Target ID: Compliance-Change-Topic - filtered by config
+us-east-2 - MediaConvertQueue - Default - cannot delete default queue
+us-east-2 - EC2Subnet - subnet-068d52b6117d5f558 - [DefaultForAz: "true"] - would remove
+us-east-2 - EC2Subnet - subnet-0275529107e220c4b - [DefaultForAz: "true"] - would remove
+us-east-2 - EC2Subnet - subnet-0eecc5cf513e438c2 - [DefaultForAz: "true"] - would remove
+us-east-2 - EC2KeyPair - DemoKey - filtered by config
+us-east-2 - EC2KeyPair - Student1KP-OH - filtered by config
+us-east-2 - EC2InternetGateway - igw-0b9f25b31e25a2ee5 - [] - would remove
+us-east-2 - CloudTrailTrail - aws-controltower-BaselineCloudTrail - filtered by config
+us-east-2 - KMSAlias - alias/aws/dynamodb - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/ebs - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/elasticfilesystem - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/es - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/glue - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/kinesisvideo - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/lambda - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/rds - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/redshift - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/s3 - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/ssm - cannot delete AWS alias
+us-east-2 - KMSAlias - alias/aws/xray - cannot delete AWS alias
+ERRO[0008] Listing FMSPolicy failed:
+    AccessDeniedException: Account: 404771415876 is not currently delegated by AWS FM.
+        status code: 400, request id: c684f85e-3418-4d73-a400-e7045c12c411 
+us-east-2 - CloudFormationStack - InitialSetup - [Name: "InitialSetup"] - would remove
+us-east-2 - CloudFormationStack - DempStack - [Name: "DempStack", tag:KeyName: "DemoKey"] - would remove
+us-east-2 - CloudFormationStack - StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-4021e5e3-e8e5-4ec9-8cdb-64d3956347ee - [Name: "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-4021e5e3-e8e5-4ec9-8cdb-64d3956347ee"] - filtered by config
+us-east-2 - CloudFormationStack - StackSet-AWSControlTowerBP-BASELINE-CONFIG-d7f6098f-c0f1-4d85-a399-c9b03d011ad1 - [Name: "StackSet-AWSControlTowerBP-BASELINE-CONFIG-d7f6098f-c0f1-4d85-a399-c9b03d011ad1"] - filtered by config
+us-east-2 - CloudFormationStack - StackSet-AWSControlTowerBP-BASELINE-CLOUDTRAIL-a17b9215-2f43-4091-b071-2d8fc67d598d - [Name: "StackSet-AWSControlTowerBP-BASELINE-CLOUDTRAIL-a17b9215-2f43-4091-b071-2d8fc67d598d"] - filtered by config
+us-east-2 - CloudFormationStack - StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-457566a1-1ab3-4bd5-96b3-ed5fa4888c65 - [Name: "StackSet-AWSControlTowerBP-BASELINE-SERVICE-ROLES-457566a1-1ab3-4bd5-96b3-ed5fa4888c65"] - filtered by config
+us-east-2 - CloudFormationStack - StackSet-AWSControlTowerBP-BASELINE-ROLES-272e7d14-b41c-443b-9a19-f3d384ec009d - [Name: "StackSet-AWSControlTowerBP-BASELINE-ROLES-272e7d14-b41c-443b-9a19-f3d384ec009d"] - filtered by config
+us-east-2 - KMSKey - a9cd13d3-7360-4920-88b7-284a97774a4d - cannot delete AWS managed key
+us-east-2 - SQSQueue - https://sqs.us-east-2.amazonaws.com/404771415876/NewSQS_22cb3aef-830f-4b76-880f-e2accbe78c6b - would remove
+us-east-2 - SQSQueue - https://sqs.us-east-2.amazonaws.com/404771415876/NewSQS_9e47ea28-c0aa-4c51-9012-0d50c148f838 - would remove
+us-east-2 - SQSQueue - https://sqs.us-east-2.amazonaws.com/404771415876/NewSQS_f7460ea6-8b05-48d1-a60e-5b5b39dc1561 - would remove
+us-east-2 - CloudWatchEventsRule - Rule: aws-controltower-ConfigComplianceChangeEventRule - filtered by config
+us-east-2 - EC2NetworkInterface - [AvailabilityZone: "us-east-2b", ID: "eni-03f97dcfb447f633b", PrivateIPAddress: "172.31.25.13", Status: "in-use", SubnetID: "subnet-068d52b6117d5f558", VPC: "vpc-0c5f4e3df86f77d4e"] - would remove
+us-east-2 - EC2NetworkInterface - [AvailabilityZone: "us-east-2b", ID: "eni-01032c8db623e86b3", PrivateIPAddress: "172.31.22.165", Status: "in-use", SubnetID: "subnet-068d52b6117d5f558", VPC: "vpc-0c5f4e3df86f77d4e"] - would remove
+us-east-2 - EC2NetworkInterface - [AvailabilityZone: "us-east-2c", ID: "eni-02fa72a28981b64da", PrivateIPAddress: "172.31.37.35", Status: "in-use", SubnetID: "subnet-0275529107e220c4b", VPC: "vpc-0c5f4e3df86f77d4e"] - would remove
+us-east-2 - EC2NetworkInterface - [AvailabilityZone: "us-east-2c", ID: "eni-0394d8f0afbfab479", PrivateIPAddress: "172.31.45.231", Status: "in-use", SubnetID: "subnet-0275529107e220c4b", VPC: "vpc-0c5f4e3df86f77d4e"] - would remove
+ERRO[0008] Listing FMSNotificationChannel failed:
+    AccessDeniedException: Account: 404771415876 is not currently delegated by AWS FM.
+        status code: 400, request id: d92db78f-e988-4556-ba1e-a24e650659c4 
+us-east-2 - EC2Volume - vol-02713a698f7beda0c - [State: "in-use"] - would remove
+us-east-2 - EC2Volume - vol-061b1c364931321f8 - [State: "in-use"] - would remove
+us-east-2 - EC2Volume - vol-0e3217f47ecda1ffd - [State: "in-use"] - would remove
+us-east-2 - EC2Volume - vol-04deead5423054ea2 - [State: "in-use"] - would remove
+us-east-2 - LambdaFunction - aws-controltower-NotificationForwarder - [Name: "aws-controltower-NotificationForwarder", tag:aws:cloudformation:logical-id: "ForwardSnsNotification", tag:aws:cloudformation:stack-id: "arn:aws:cloudformation:us-east-2:404771415876:stack/StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-4021e5e3-e8e5-4ec9-8cdb-64d3956347ee/872700a0-1479-11ea-a53e-0ade6091f9d8", tag:aws:cloudformation:stack-name: "StackSet-AWSControlTowerBP-BASELINE-CLOUDWATCH-4021e5e3-e8e5-4ec9-8cdb-64d3956347ee"] - filtered by config
+INFO[0008] TagOptionNotMigratedException: TagOption Migration not complete 
+us-east-2 - SNSSubscription - Owner: 404771415876 ARN: arn:aws:sns:us-east-2:404771415876:aws-controltower-SecurityNotifications:5e33a227-ba39-4423-934a-f47c628ad041 - filtered by config
+us-east-2 - OpsWorksUserProfile - arn:aws:sts::404771415876:assumed-role/AWSReservedSSO_MBC-Admin_c0f2ca606717c356/ilgorbek.kuchkarov@gmail.com - Cannot delete OpsWorksUserProfile of calling User
+us-east-2 - EC2Instance - i-0bbaf019fff2621eb - [tag:aws:cloudformation:logical-id: "EC2Instance", tag:aws:cloudformation:stack-id: "arn:aws:cloudformation:us-east-2:404771415876:stack/InitialSetup/d9a8ebb0-ab49-11ea-b989-023ebc410218", tag:aws:cloudformation:stack-name: "InitialSetup"] - would remove
+us-east-2 - EC2Instance - i-0b740e07774245184 - [] - would remove
+us-east-2 - EC2Instance - i-093df7c0acd45370d - [tag:KeyName: "DemoKey", tag:Name: "lab1", tag:aws:cloudformation:logical-id: "EC2Instance", tag:aws:cloudformation:stack-id: "arn:aws:cloudformation:us-east-2:404771415876:stack/DempStack/472e3210-9b20-11ea-84ac-0286ec33b064", tag:aws:cloudformation:stack-name: "DempStack"] - would remove
+us-east-2 - EC2Instance - i-0e433fd8ff9a68d44 - [] - would remove
+WARN[0009] skipping request: DNS lookup failed for mobile.us-east-2.amazonaws.com; assuming it does not exist in this region 
+us-east-2 - EC2NetworkACL - acl-0f1a54884f46390c3 - cannot delete default VPC
+us-east-2 - CloudWatchLogsLogGroup - /aws/lambda/aws-controltower-NotificationForwarder - filtered by config
+us-east-2 - CloudWatchLogsLogGroup - aws-controltower/CloudTrailLogs - filtered by config
+us-east-2 - EC2RouteTable - rtb-099f55c74606943f0 - [] - would remove
+us-east-2 - EC2VPC - vpc-0c5f4e3df86f77d4e - [ID: "vpc-0c5f4e3df86f77d4e", IsDefault: "true"] - would remove
+INFO[0009] TagOptionNotMigratedException: TagOption Migration not complete 
+us-east-2 - EC2DHCPOption - dopt-b9a87ad2 - [] - would remove
+global - IAMInstanceProfileRole - allow-assume-EC2-role-in-Lamarr1 -> allow-assume-EC2-role-in-Lamarr1 - would remove
+global - IAMInstanceProfile - allow-assume-EC2-role-in-Lamarr1 - would remove
+global - IAMSAMLProvider - arn:aws:iam::404771415876:saml-provider/AWSSSO_3d8d9fd719b89471_DO_NOT_DELETE - filtered by config
+global - IAMRolePolicyAttachment - allow-assume-CF-role-in-Lamarr -> AmazonEC2FullAccess - [PolicyName: "AmazonEC2FullAccess", RoleName: "allow-assume-CF-role-in-Lamarr"] - would remove
+global - IAMRolePolicyAttachment - allow-assume-CF-role-in-Lamarr -> AWSCloudFormationFullAccess - [PolicyName: "AWSCloudFormationFullAccess", RoleName: "allow-assume-CF-role-in-Lamarr"] - would remove
+global - IAMRolePolicyAttachment - allow-assume-EC2-role-in-Lamarr -> AmazonEC2FullAccess - [PolicyName: "AmazonEC2FullAccess", RoleName: "allow-assume-EC2-role-in-Lamarr"] - would remove
+global - IAMRolePolicyAttachment - allow-assume-EC2-role-in-Lamarr1 -> AmazonEC2FullAccess - [PolicyName: "AmazonEC2FullAccess", RoleName: "allow-assume-EC2-role-in-Lamarr1"] - would remove
+global - IAMRolePolicyAttachment - allow-assume-SQS-role-in-Lamarr -> AmazonSQSFullAccess - [PolicyName: "AmazonSQSFullAccess", RoleName: "allow-assume-SQS-role-in-Lamarr"] - would remove
+global - IAMRolePolicyAttachment - aws-controltower-AdministratorExecutionRole -> AdministratorAccess - [PolicyName: "AdministratorAccess", RoleName: "aws-controltower-AdministratorExecutionRole"] - filtered by config
+global - IAMRolePolicyAttachment - aws-controltower-ConfigRecorderRole -> ReadOnlyAccess - [PolicyName: "ReadOnlyAccess", RoleName: "aws-controltower-ConfigRecorderRole"] - filtered by config
+global - IAMRolePolicyAttachment - aws-controltower-ConfigRecorderRole -> AWSConfigRole - [PolicyName: "AWSConfigRole", RoleName: "aws-controltower-ConfigRecorderRole"] - filtered by config
+global - IAMRolePolicyAttachment - aws-controltower-ForwardSnsNotificationRole -> AWSLambdaBasicExecutionRole - [PolicyName: "AWSLambdaBasicExecutionRole", RoleName: "aws-controltower-ForwardSnsNotificationRole"] - filtered by config
+global - IAMRolePolicyAttachment - aws-controltower-ReadOnlyExecutionRole -> ReadOnlyAccess - [PolicyName: "ReadOnlyAccess", RoleName: "aws-controltower-ReadOnlyExecutionRole"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_AWSAdministratorAccess_f87196d4724252d9 -> AdministratorAccess - [PolicyName: "AdministratorAccess", RoleName: "AWSReservedSSO_AWSAdministratorAccess_f87196d4724252d9"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_AWSOrganizationsFullAccess_ca9fdd957abd959d -> AWSOrganizationsFullAccess - [PolicyName: "AWSOrganizationsFullAccess", RoleName: "AWSReservedSSO_AWSOrganizationsFullAccess_ca9fdd957abd959d"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_AWSPowerUserAccess_79a34c9d2681139f -> PowerUserAccess - [PolicyName: "PowerUserAccess", RoleName: "AWSReservedSSO_AWSPowerUserAccess_79a34c9d2681139f"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_AWSReadOnlyAccess_7d2acc6ca3a10678 -> ViewOnlyAccess - [PolicyName: "ViewOnlyAccess", RoleName: "AWSReservedSSO_AWSReadOnlyAccess_7d2acc6ca3a10678"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_MBC-Admin_c0f2ca606717c356 -> AdministratorAccess - [PolicyName: "AdministratorAccess", RoleName: "AWSReservedSSO_MBC-Admin_c0f2ca606717c356"] - filtered by config
+global - IAMRolePolicyAttachment - AWSReservedSSO_MBC-SystemAdmin_b69c1f72927ba11e -> PowerUserAccess - [PolicyName: "PowerUserAccess", RoleName: "AWSReservedSSO_MBC-SystemAdmin_b69c1f72927ba11e"] - filtered by config
+global - IAMRolePolicyAttachment - AWSServiceRoleForOrganizations -> AWSOrganizationsServiceTrustPolicy - [PolicyName: "AWSOrganizationsServiceTrustPolicy", RoleName: "AWSServiceRoleForOrganizations"] - cannot detach from service roles
+global - IAMRolePolicyAttachment - AWSServiceRoleForSSO -> AWSSSOServiceRolePolicy - [PolicyName: "AWSSSOServiceRolePolicy", RoleName: "AWSServiceRoleForSSO"] - cannot detach from service roles
+global - IAMRolePolicyAttachment - AWSServiceRoleForSupport -> AWSSupportServiceRolePolicy - [PolicyName: "AWSSupportServiceRolePolicy", RoleName: "AWSServiceRoleForSupport"] - cannot detach from service roles
+global - IAMRolePolicyAttachment - AWSServiceRoleForTrustedAdvisor -> AWSTrustedAdvisorServiceRolePolicy - [PolicyName: "AWSTrustedAdvisorServiceRolePolicy", RoleName: "AWSServiceRoleForTrustedAdvisor"] - cannot detach from service roles
+global - IAMRolePolicy - aws-controltower-CloudWatchLogsRole -> cloudtrail-policy - [PolicyName: "cloudtrail-policy", role:Path: "/", role:RoleID: "AROAV4PSBU5CMZMVQHVHH", role:RoleName: "aws-controltower-CloudWatchLogsRole"] - filtered by config
+global - IAMRolePolicy - aws-controltower-ForwardSnsNotificationRole -> sns - [PolicyName: "sns", role:Path: "/", role:RoleID: "AROAV4PSBU5CHUC46H5YG", role:RoleName: "aws-controltower-ForwardSnsNotificationRole"] - filtered by config
+global - IAMRolePolicy - AWSControlTowerExecution -> AdministratorAccess - [PolicyName: "AdministratorAccess", role:Path: "/", role:RoleID: "AROAV4PSBU5CLABQZG2XM", role:RoleName: "AWSControlTowerExecution"] - filtered by config
+global - IAMRole - allow-assume-CF-role-in-Lamarr - [Name: "allow-assume-CF-role-in-Lamarr"] - would remove
+global - IAMRole - allow-assume-EC2-role-in-Lamarr - [Name: "allow-assume-EC2-role-in-Lamarr"] - would remove
+global - IAMRole - allow-assume-EC2-role-in-Lamarr1 - [Name: "allow-assume-EC2-role-in-Lamarr1"] - would remove
+global - IAMRole - allow-assume-SQS-role-in-Lamarr - [Name: "allow-assume-SQS-role-in-Lamarr"] - would remove
+global - IAMRole - aws-controltower-AdministratorExecutionRole - [Name: "aws-controltower-AdministratorExecutionRole"] - filtered by config
+global - IAMRole - aws-controltower-CloudWatchLogsRole - [Name: "aws-controltower-CloudWatchLogsRole"] - filtered by config
+global - IAMRole - aws-controltower-ConfigRecorderRole - [Name: "aws-controltower-ConfigRecorderRole"] - filtered by config
+global - IAMRole - aws-controltower-ForwardSnsNotificationRole - [Name: "aws-controltower-ForwardSnsNotificationRole"] - filtered by config
+global - IAMRole - aws-controltower-ReadOnlyExecutionRole - [Name: "aws-controltower-ReadOnlyExecutionRole"] - filtered by config
+global - IAMRole - AWSControlTowerExecution - [Name: "AWSControlTowerExecution"] - filtered by config
+global - IAMRole - AWSReservedSSO_AWSAdministratorAccess_f87196d4724252d9 - [Name: "AWSReservedSSO_AWSAdministratorAccess_f87196d4724252d9"] - filtered by config
+global - IAMRole - AWSReservedSSO_AWSOrganizationsFullAccess_ca9fdd957abd959d - [Name: "AWSReservedSSO_AWSOrganizationsFullAccess_ca9fdd957abd959d"] - filtered by config
+global - IAMRole - AWSReservedSSO_AWSPowerUserAccess_79a34c9d2681139f - [Name: "AWSReservedSSO_AWSPowerUserAccess_79a34c9d2681139f"] - filtered by config
+global - IAMRole - AWSReservedSSO_AWSReadOnlyAccess_7d2acc6ca3a10678 - [Name: "AWSReservedSSO_AWSReadOnlyAccess_7d2acc6ca3a10678"] - filtered by config
+global - IAMRole - AWSReservedSSO_MBC-Admin_c0f2ca606717c356 - [Name: "AWSReservedSSO_MBC-Admin_c0f2ca606717c356"] - filtered by config
+global - IAMRole - AWSReservedSSO_MBC-SystemAdmin_b69c1f72927ba11e - [Name: "AWSReservedSSO_MBC-SystemAdmin_b69c1f72927ba11e"] - filtered by config
+global - IAMRole - AWSServiceRoleForOrganizations - [Name: "AWSServiceRoleForOrganizations"] - cannot delete service roles
+global - IAMRole - AWSServiceRoleForSSO - [Name: "AWSServiceRoleForSSO"] - cannot delete service roles
+global - IAMRole - AWSServiceRoleForSupport - [Name: "AWSServiceRoleForSupport"] - cannot delete service roles
+global - IAMRole - AWSServiceRoleForTrustedAdvisor - [Name: "AWSServiceRoleForTrustedAdvisor"] - cannot delete service roles
+Scan complete: 111 total, 41 nukeable, 70 filtered.
